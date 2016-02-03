@@ -1,4 +1,4 @@
-package com.acacia.identitypipeline;
+package com.acacia.timestamppipeline;
 
 import com.acacia.sdk.AbstractTransform;
 import com.acacia.sdk.AbstractTransformComposer;

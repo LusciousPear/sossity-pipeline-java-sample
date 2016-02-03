@@ -38,7 +38,7 @@
 
 
   <groupId>com.acacia.samples</groupId>
-  <artifactId>timestamppipe</artifactId>
+  <artifactId>timestamppipeline</artifactId>
 
   <version>0.1-ALPHA</version>
 
