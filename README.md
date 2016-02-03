@@ -20,7 +20,7 @@ Wherein the original data in "resource" is wrapped with metadata.
 
 ## Brief Instructions (assuming Java familiarity) 
 
-1. Make sure Java 1.8 is installed, Oracle JDK preferred
+1. Make sure Java 1.8 is installed, Oracle JDK preferred, as well as Maven3.
 1. To try different transformations, the only file you need to change is /home/bradford/proj/sossity-pipeline-java-sample/src/main/java/com/acacia/timestamppipeline/TimestampPipeline.java -- remember to adhere to the envelope format.
 1. Re-compile pipeline sample with "mvn package"
 1. To build multiple pipelines, clone this repo multiple times and change the <artifactId>timestamppipeline</artifactId> in pom.xml to change the JAR name.
