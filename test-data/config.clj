@@ -1,7 +1,7 @@
 {:config    {:remote-composer-classpath "/usr/local/lib/angleddream-bundled-0.1-ALPHA.jar"
              :local-angleddream-path    "/home/bradford/proj/angled-dream/target/angleddream-bundled-0.1-ALPHA.jar"
              :remote-libs-path          "/usr/local/lib"
-             :test-output               "/home/bradford/proj/sossity-pipeline-java-sample/testoutput/"
+             :test-output               "testoutput/"
              :error-buckets             true}
  :cluster   {:name        "hxhstack" :initial_node_count 3 :master_auth {:username "hx" :password "hstack"}
              :node_config {:oauth_scopes ["https://www.googleapis.com/auth/compute"
@@ -15,26 +15,26 @@
  :provider  {:credentials "${file(\"/home/ubuntu/demo-config/account.json\")}" :project "hx-test"}
  :pipelines {"pipelineB"
              {:transform-jar  "timestamppipeline-bundled-0.1-ALPHA.jar"
-              :local-jar-path "/home/bradford/proj/sossity-pipeline-java-sample/target/timestamppipeline-bundled-0.1-ALPHA.jar"
+              :local-jar-path "target/timestamppipeline-bundled-0.1-ALPHA.jar"
               :composer-class "com.acacia.timestamppipeline.TimestampComposer"}
              "pipelineC"
              {:transform-jar  "timestamppipeline.jar-bundled-0.1-ALPHA.jar"
-              :local-jar-path "/home/bradford/proj/sossity-pipeline-java-sample/target/timestamppipeline-bundled-0.1-ALPHA.jar"
+              :local-jar-path "target/timestamppipeline-bundled-0.1-ALPHA.jar"
               :composer-class "com.acacia.timestamppipeline.TimestampComposer"}
              "pipelineD"
              {:transform-jar  "timestamppipeline.jar-bundled-0.1-ALPHA.jar"
-              :local-jar-path "/home/bradford/proj/sossity-pipeline-java-sample/target/timestamppipeline-bundled-0.1-ALPHA.jar"
+              :local-jar-path "target/timestamppipeline-bundled-0.1-ALPHA.jar"
               :composer-class "com.acacia.timestamppipeline.TimestampComposer"}
              "pipelineE"
              {:transform-jar  "timestamppipeline.jar-bundled-0.1-ALPHA.jar"
-              :local-jar-path "/home/bradford/proj/sossity-pipeline-java-sample/target/timestamppipeline-bundled-0.1-ALPHA.jar"
+              :local-jar-path "target/timestamppipeline-bundled-0.1-ALPHA.jar"
               :composer-class "com.acacia.timestamppipeline.TimestampComposer"}
              "pipelineG"
              {:transform-jar  "timestamppipeline.jar-bundled-0.1-ALPHA.jar"
-              :local-jar-path "/home/bradford/proj/sossity-pipeline-java-sample/target/timestamppipeline-bundled-0.1-ALPHA.jar"
+              :local-jar-path "target/timestamppipeline-bundled-0.1-ALPHA.jar"
               :composer-class "com.acacia.timestamppipeline.TimestampComposer"}}
- :sources   {"sourceA" {:type "kub" :test-input "/home/bradford/proj/sossity-pipeline-java-sample/test-data/sourceA.json"}
-             "sourceF" {:type "kub" :test-input "/home/bradford/proj/sossity-pipeline-java-sample/test-data/sourceF.json"}}
+ :sources   {"sourceA" {:type "kub" :test-input "test-data/sourceA.json"}
+             "sourceF" {:type "kub" :test-input "test-data/sourceF.json"}}
  :sinks     {"sinkB" {:type "gcs" :bucket "sinkB-test"}
              "sinkD" {:type "gcs" :bucket "sinkD-test"}
              "sinkE" {:type "gcs" :bucket "sinkE-test"}
