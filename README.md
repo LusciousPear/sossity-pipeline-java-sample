@@ -24,4 +24,4 @@ Wherein the original data in "resource" is wrapped with metadata.
 1. re-compile with "mvn package"
 1. To build multiple pipelines, clone this repo multiple times and change the <artifactId>timestamppipeline</artifactId> in pom.xml to change the JAR name.
 1. Refer to test-data/config.clj to change the pipeline topology as well as sample input data. The only fields you need to edit are :pipelines, :sources, :sinks, :edges
-1. After compiling pipelines and editing config file, run ./simulate.sh <path-to-config> again. 
+1. After compiling pipelines and editing config file, run ./simulate.sh <path-to-config> again.
