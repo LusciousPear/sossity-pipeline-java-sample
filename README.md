@@ -5,8 +5,9 @@ Sample java pipeline for Sossity
 ## Simulator Instructions 
 
 1. Clone this repo
-1. `wget https://s3.amazonaws.com/com.22acacia/releases/sossity/sossity/sossity-0.1.0-SNAPSHOT-standalone.jar`
+1. `cd` to the repo and `mvn package` to build the test pipeline
 1. `/simulate.sh test-data/config.clj`
+1. Observe changes in `testoutput`
 
 ## How it Works (Basic) 
 
