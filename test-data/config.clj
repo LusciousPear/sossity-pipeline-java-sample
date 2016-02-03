@@ -1,5 +1,4 @@
 {:config    {:remote-composer-classpath "/usr/local/lib/angleddream-bundled-0.1-ALPHA.jar"
-             :local-angleddream-path    "/home/bradford/proj/angled-dream/target/angleddream-bundled-0.1-ALPHA.jar"
              :remote-libs-path          "/usr/local/lib"
              :test-output               "testoutput/"
              :error-buckets             true}
