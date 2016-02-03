@@ -116,7 +116,7 @@
 
 
     <dependency>
-      <groupId>com.acacia.angleddream</groupId>
+      <groupId>com.acacia</groupId>
       <artifactId>angleddream</artifactId>
       <version>0.1-ALPHA</version>
     </dependency>
