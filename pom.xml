@@ -23,16 +23,8 @@
 
   <repositories>
     <repository>
-      <id>s3.site</id>
-      <url>s3://com.22acacia/site</url>
-    </repository>
-    <repository>
-      <id>s3.release</id>
-      <url>s3://com.22acacia/releases</url>
-    </repository>
-    <repository>
-      <id>s3.snapshot</id>
-      <url>s3://com.22acacia/snapshot</url>
+      <id>jitpack.io</id>
+      <url>https://jitpack.io</url>
     </repository>
   </repositories>
 
@@ -49,9 +41,9 @@
 
     <extensions>
       <extension>
-        <groupId>org.kuali.maven.wagons</groupId>
-        <artifactId>maven-s3-wagon</artifactId>
-        <version>1.2.1</version>
+        <groupId>org.springframework.build</groupId>
+        <artifactId>aws-maven</artifactId>
+        <version>5.0.0.RELEASE</version>
       </extension>
     </extensions>
 
@@ -116,10 +108,11 @@
 
 
     <dependency>
-      <groupId>com.acacia.angleddream</groupId>
-      <artifactId>angleddream</artifactId>
-      <version>0.1-ALPHA</version>
+      <groupId>com.github.22Acacia</groupId>
+      <artifactId>angled-dream</artifactId>
+      <version>-SNAPSHOT</version>
     </dependency>
+
 
     <dependency>
       <groupId>com.google.auto.service</groupId>
