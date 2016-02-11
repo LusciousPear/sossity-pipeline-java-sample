@@ -7,7 +7,7 @@ Sample java pipeline for Sossity
 1. Clone this repo
 1. `cd` to the repo and `mvn package` to build the test pipeline
 1. `Make sure test-data/test_config.clj` reflects your current environment
-1. `/simulate.sh test-data/config.clj test-data/test_config.clj`
+1. `/simulate.sh test-data/config.clj,test-data/config2.clj test-data/test_config.clj`
 1. Observe changes in `testoutput`
 
 ## How it Works (Basic) 

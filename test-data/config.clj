@@ -12,26 +12,21 @@
              :stagingLocation "gs://hx-test/staging-eu"}
  :provider  {:credentials "${file(\"/home/ubuntu/demo-config/account.json\")}" :project "hx-test"}
  :pipelines {"pipelineB"
-             {:transform-jar  "timestamppipeline-bundled-0.1-ALPHA.jar"}
+             {:transform-jar "timestamppipeline-bundled-0.1-ALPHA.jar"}
              "pipelineC"
-             {:transform-jar  "timestamppipeline-bundled-0.1-ALPHA.jar"}
+             {:transform-jar "timestamppipeline-bundled-0.1-ALPHA.jar"}
              "pipelineD"
-             {:transform-jar  "timestamppipeline-bundled-0.1-ALPHA.jar"}
+             {:transform-jar "timestamppipeline-bundled-0.1-ALPHA.jar"}
              "pipelineE"
-             {:transform-jar  "timestamppipeline-bundled-0.1-ALPHA.jar"}
-             "pipelineG"
-             {:transform-jar  "timestamppipeline-bundled-0.1-ALPHA.jar"}}
- :sources   {"sourceA" {:type "kub"}
-             "sourceF" {:type "kub"}}
+             {:transform-jar "timestamppipeline-bundled-0.1-ALPHA.jar"}}
+ :sources   {"sourceA" {:type "kub"}}
  :sinks     {"sinkB" {:type "gcs" :bucket "sinkB-test"}
              "sinkD" {:type "gcs" :bucket "sinkD-test"}
              "sinkE" {:type "gcs" :bucket "sinkE-test"}
-             "sinkG" {:type "gcs" :bucket "sinkG-test"}}
+             }
  :edges     [{:origin "sourceA" :targets ["pipelineB" "pipelineC"]}
-             {:origin "sourceF" :targets ["pipelineG"]}
              {:origin "pipelineB" :targets ["sinkB"]}
              {:origin "pipelineC" :targets ["pipelineD" "pipelineE"]}
              {:origin "pipelineD" :targets ["sinkD"]}
-             {:origin "pipelineE" :targets ["sinkE"]}
-             {:origin "pipelineG" :targets ["sinkG"]}]}
+             {:origin "pipelineE" :targets ["sinkE"]}]}
 
