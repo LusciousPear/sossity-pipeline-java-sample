@@ -1,5 +1,4 @@
-{
- :config {:test-output "testoutput/"}
+{:config {:test-output "testoutput/"}
  :pipelines {"pipelineB" {:local-jar-path "target/"
                           :composer-class "com.acacia.timestamppipeline.TimestampComposer"}
              "pipelineC" {:local-jar-path "target/"
@@ -10,6 +9,5 @@
                           :composer-class "com.acacia.timestamppipeline.TimestampComposer"}
              "pipelineG" {:local-jar-path "target/"
                           :composer-class "com.acacia.timestamppipeline.TimestampComposer"}}
-  :sources   {"sourceA" {:test-input "test-data/sourceA.json"}
-              "sourceF" {:test-input "test-data/sourceF.json"}}
- }
+ :sources   {"sourceA" {:test-input "test-data/sourceA.json"}
+             "sourceF" {:test-input "test-data/sourceF.json"}}}
