@@ -10,4 +10,5 @@
              "pipelineG" {:local-jar-path "target/"
                           :composer-class "com.acacia.timestamppipeline.TimestampComposer"}}
  :sources   {"sourceA" {:test-input "test-data/sourceA.json"}
-             "sourceF" {:test-input "test-data/sourceF.json"}}}
+             "sourceF" {:test-input "test-data/sourceF.json"}
+             }}
