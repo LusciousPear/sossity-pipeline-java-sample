@@ -45,6 +45,8 @@ public class TimestampPipeline extends AbstractTransform  {
         //put into map
         hm.put("transforms", newhm);
 
+        hm.put("horray", "yay");
+
         //turn back into a JSON string for consumption in other pipelines
         return gson.toJson(hm);
     }
